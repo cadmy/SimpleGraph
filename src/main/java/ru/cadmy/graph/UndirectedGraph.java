@@ -37,7 +37,7 @@ public class UndirectedGraph extends SimpleGraph {
                 } else {
                     path.addAll(subpath);
                     path.remove(new Edge(edge.getEnd(), edge.getStart()));
-                    List<Edge> elementsToRemove = new ArrayList();
+                    List<Edge> elementsToRemove = new ArrayList<>();
                     for (Iterator<Edge> iterator = path.iterator(); iterator.hasNext(); ) {
                         Edge current = iterator.next();
                         if (iterator.hasNext()) {
