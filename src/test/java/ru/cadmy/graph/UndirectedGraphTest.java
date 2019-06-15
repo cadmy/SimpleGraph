@@ -24,7 +24,7 @@ public class UndirectedGraphTest extends GraphTest {
     }
 
     @Test
-    public void checkUndircetedCorrectPath() {
+    public void checkUndirectedCorrectPath() {
         List<Edge> edges = graph.getPath("Dzerzhinsk", "Pavlovo");
         System.out.println(edges);
         assertEquals(3, edges.size());
@@ -42,13 +42,6 @@ public class UndirectedGraphTest extends GraphTest {
         List<Edge> edges = graph.getPath("NizhnyNovgorod", "Dzerzhinsk");
         System.out.println(edges);
         assertEquals(1, edges.size());
-    }
-
-    @Test
-    public void checkUnreachableDestination() {
-        List<Edge> edges = graph.getPath("Arzamas", "Sarov");
-        System.out.println(edges);
-        assertEquals(true, edges.size() > 0);
     }
 
     @Test
