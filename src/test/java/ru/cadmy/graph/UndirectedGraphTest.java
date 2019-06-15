@@ -31,7 +31,7 @@ public class UndirectedGraphTest extends GraphTest {
     }
 
     @Test
-    public void checkAnotherUndircetedCorrectPath() {
+    public void checkAnotherUndirectedCorrectPath() {
         List<Edge> edges = graph.getPath("Arzamas", "NizhnyNovgorod");
         System.out.println(edges);
         assertEquals(2, edges.size());

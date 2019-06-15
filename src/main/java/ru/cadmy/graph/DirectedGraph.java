@@ -17,7 +17,6 @@ public class DirectedGraph extends SimpleGraph {
         List<Edge> path = new ArrayList<>();
         Set<Edge> seen = new HashSet<>();
 
-
         for (Edge edge : edges) {
             if (edge.getStart().equals(start) && !seen.contains(edge)) {
                 seen.add(edge);
